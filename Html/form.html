@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in html</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+
+    <form onsubmit="add(event)">
+      <label for="email">email</label>
+      <input id="email" type="text" placeholder="enter your email" />
+      <br />
+      <br />
+      <label for="name">name</label>
+      <input id="name" type="text" placeholder="enter your name" />
+      <br />
+      <br />
+      <label for="contact">contact</label>
+      <input
+        id="contact"
+        name="contact"
+        type="number"
+        max="2"
+        placeholder="enter your contact"
+      />
+      <label for="gender">gender</label>
+
+      <label for="male">male</label>
+      <input id="gender" name="gender" type="radio" value="male" />
+
+      <label for="female">female</label>
+      <input id="gender" name="gender" type="radio" value="female" />
+      <br />
+      <br />
+      <input type="checkbox" name="agree" id="agree" />
+      <label for="">agree notes</label>
+      <br />
+      <br />
+      <button type="submit">submit</button>
+    </form>
+  </body>
+  <script>
+    const add = (e) => {
+      e.preventDefault();
+      const value = document.querySelector("#contact").value;
+      console.log(value);
+    };
+  </script>
+</html>

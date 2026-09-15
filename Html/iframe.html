@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i-frame</title>
+    <style>
+      .mapouter {
+        position: relative;
+        text-align: right;
+        width: 600px;
+        height: 400px;
+      }
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        width: 600px;
+        height: 400px;
+      }
+      .gmap_iframe {
+        width: 600px !important;
+        height: 400px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <iframe src="" frameborder="0"></iframe> -->
+
+    <!--! youtube -->
+
+    <!-- <iframe
+      src="https://www.youtube.com/embed/oz5c88cO5P8"
+     frameborder="0"
+      allowfullscreen
+    ></iframe> -->
+
+    <!--? map -->
+
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          class="gmap_iframe"
+          frameborder="0"
+          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=thane&amp;output=embed"
+        ></iframe
+        ><a href="https://embed-googlemap.com">embed-googlemap.com</a>
+      </div>
+    </div>
+  </body>
+</html>
